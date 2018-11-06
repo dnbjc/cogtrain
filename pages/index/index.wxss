@@ -1,0 +1,16 @@
+/**index.wxss**/
+.page__bd{
+  margin-top: 0rpx;
+  position:relative;
+  font-size: 40rpx;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /**color:#1AAD19;
+  color:#52a341;**/
+  color:#999999;
+}
+.page__image{
+  padding-left: 50rpx;
+}
+
+

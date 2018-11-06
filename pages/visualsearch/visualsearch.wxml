@@ -1,0 +1,19 @@
+<!--pages/visualsearch/visualsearch.wxml-->
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">注意力训练：找出与众不同的图形（颜色和形状的组合）</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-gridsss">
+            <block wx:for="{{grids}}" wx:key="*this">
+                <view class="weui-gridss" hover-class='true'>
+                <image  class="weui-grid__covers" 
+                    src="../../images/{{pictures[item]}}.png"  hidden="{{1-items[item]}}" id="{{item}}"             bindtap="btn_click"/>
+                </view>
+            </block>
+        </view>
+        <view class="itemInfo" wx:if="{{trialCount<10}}">第{{trialCount+1}}次/共10次</view>
+        <view class="itemInfo" wx:else>第{{trialCount}}次/共10次</view>
+        <view class="itemInfo" bindtap='showInstruction'>怎样训练这一任务？</view>
+    </view>
+</view>

@@ -1,0 +1,21 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">记忆力训练：当前数字是否与之前<text style="color: red">第{{nValue}}个</text>相同?</view>
+    </view>
+    
+    <view class="page_bd placebackholder">
+      <view class="targetnbackStyle" style="color: green" >
+        {{currentItem}}
+      </view>
+    </view>
+    
+    <view class="buttons_layout" style="display: flex">
+      <button type="{{btnJdType}}" disabled="{{btnJdDisable}}" id="no" bindtap='btnJdClick'>不同</button>
+      <button type="{{btnNextType}}" disabled="{{btnNextDisable}}" bindtap='btnNextClick'>{{btnNextName}}</button>
+      <button type="{{btnJdType}}" disabled="{{btnJdDisable}}" id="yes" bindtap='btnJdClick'>相同</button>
+    </view>
+    
+    <view class="itemInfo" wx:if="{{loopCount<totalItem}}">第{{loopCount+1}}个/共{{totalItem}}个</view>
+    <view class="itemInfo" wx:else>第{{loopCount}}个/共{{totalItem}}个</view>
+    <view class="itemInfo" bindtap='showInstruction'>怎样训练这一任务？</view>
+</view>

@@ -1,0 +1,20 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">控制力训练：上面词的意思与下面词的颜色是否一致？</view>
+    </view>
+    <view class="page_bd placeholder2">
+      <view class="targetStyle" wx:if="{{condition}}">
+        {{targetcolorWord}}
+      </view>
+      <view class="targetStyle" style="color:{{targetColor}}">
+        {{targetWord}}
+      </view>
+    </view>
+    <view class="buttons_layout" style="display: flex">
+      <button type="primary" disabled="{{btnJdDisable}}" id="no" bindtap='btnClick'>不同</button>
+      <button type="default" disabled="{{btnStartDisable}}" bindtap='btnStart'>{{btnNextName}}</button>
+      <button type="primary" disabled="{{btnJdDisable}}" id="yes" bindtap='btnClick'>相同</button>
+    </view>
+    <view class="itemInfo">第{{seqCount+1}}个/共{{seqTotal}}个</view>
+    <view class="itemInfo" bindtap='showInstruction'>怎样训练这一任务？</view>
+</view>

@@ -1,0 +1,27 @@
+<!--index.wxml-->
+
+<view class="page__hd">
+   <button class="weui-btn" type="primary" bindtap='btnStartTraining'>{{trainWord}}</button>
+ </view>
+
+<view class="page__bd" style="color: black" >
+  今日训练计划
+  <block wx:for="{{trainNames}}" wx:key="*this">
+    <view>
+       {{item}}：还剩{{trainRecords[index]}}次
+    </view>
+  </block>
+</view>
+
+<view class="page__btn">
+  <button class="weui-btn" type="primary"  plain="true" bindtap='btnScores'>训练成绩</button>
+</view>
+
+<view class="placeholderIndex"/>
+<view class="page__bd">
+<view class="weui-article">
+  <view class="weui-article__title"  bindtap="showData">电子科技大学 生命学院</view>
+  <view class="weui-article__title">视觉注意与眼动实验室</view>
+  <view class="weui-article__title">jjzhang@uetsc.edu.cn</view>
+</view>
+</view>

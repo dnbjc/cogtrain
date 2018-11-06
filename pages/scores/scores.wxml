@@ -1,0 +1,6 @@
+<view class='radarContainer'>
+<canvas class='radarCanvas' canvas-id='radarCanvas' bindtap='showHistory'></canvas>
+</view>
+<view class="page__btn">
+  <button class="weui-btn" type="primary"  plain="true" bindtap='btnIndex'>返回首页</button>
+</view>

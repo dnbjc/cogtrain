@@ -1,0 +1,49 @@
+<!--pages/category/category.wxml-->
+<view class="page">
+    <view class="page__bd">
+
+      <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd" style="color:#1AAD00">行为测试</view>
+   
+      <view class="weui-panel__bd">
+
+      <navigator url="../nbackMemory/nbackMemory?nValue={{trainDifficulties[0]}}&entry=2" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../images/behavior1.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">记忆力训练</view>
+                    </view>
+      </navigator>
+
+      <navigator url="../STROOP/stroop?nValue={{trainDifficulties[1]}}&entry=2" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../images/behavior2.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">控制力训练</view>
+                    </view>
+      </navigator>
+
+      <navigator url="../PAL/PAL?nValue={{trainDifficulties[2]}}&entry=2" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../images/behavior3.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">视空间训练</view>
+                    </view>
+      </navigator>
+
+      <navigator url="../visualsearch/visualsearch?nValue={{trainDifficulties[3]}}&entry=2" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../images/behavior4.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">注意力训练</view>
+                    </view>
+      </navigator> 
+
+      </view>
+      </view>
+    </view>
+</view>
