@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/scores/scores",
+    "pages/nbackMemory/nbackMemory",
+    "pages/PAL/PAL",
+    "pages/STROOP/stroop",
+    "pages/visualsearch/visualsearch",
+    "pages/showData/showData"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#ddd",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "大脑保健操",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ddd",
+    "selectedColor": "#1AAD00",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home_unselected.png",
+        "selectedIconPath": "images/home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "iconPath": "images/category_unselected.png",
+        "selectedIconPath": "images/category_selected.png",
+        "text": "分类"
+      }
+    ]
+  }
+}
