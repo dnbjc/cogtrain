@@ -1,0 +1,26 @@
+<view class='page'>
+  <swiper current='{{currentTab}}' style='height:{{swiperheight}}px' next-margin='20rpx' previous-margin='20rpx'>
+    <block wx:for="{{array}}">
+      <swiper-item class='swiper-item' catchtouchmove='stoptouchmove'> 
+        <view class='card1' style='height:{{swiperheight-20}}px'>
+          <view class='radio' style='height:{{swiperheight-0.16*swiperheight}}px'>
+            <view style='padding-top:20rpx;padding-right:20rpx;height:15%' >{{item.question}}</view>
+            <radio-group bindchange='radiochange' bindtap='nextquestion'>
+              <block wx:for='{{choice}}'>
+                <radio style='width:80%;margin-top:10rpx;height:50rpx' value='{{item.value}}'>{{item.choice}}</radio>
+              </block>
+          
+            </radio-group>
+          </view>
+          <view class='btn-area'>
+            <button class="weui-btn" style='width:{{btn_wide}}%' bindtap='changeitem' hidden='{{hiddenname}}'>上一题</button> 
+            <button style='width: 30%' class="mini-btn"  hidden='{{hiddenname1}}'>提交</button> 
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='text' style='height:{{swiperheight*0.1}}px;line-height:{{swiperheight*0.1}}px;font-size:{{swiperheight*0.05}}px'>
+  {{currentTab+1}}/8
+  </view>
+</view>
